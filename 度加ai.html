@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>度加 AI | 一人创作公司·超级个体必备 - 小白上手教程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'PingFang SC', sans-serif; }
+        .tech-gradient { background: linear-gradient(135deg, #0066FF 0%, #00CCFF 100%); }
+        .blue-shadow { box-shadow: 0 10px 30px -10px rgba(0, 102, 255, 0.3); }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-blue-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <svg class="text-white w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-blue-900">度加 AI <span class="text-blue-500 font-normal">1.0</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#experts" class="hover:text-blue-600">AI 员工团</a>
+                <a href="#tutorials" class="hover:text-blue-600">实战教程</a>
+                <a href="#join" class="hover:text-blue-600 font-bold text-blue-600">正式开公司</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                简单对话，<br><span class="text-transparent bg-clip-text tech-gradient">启动你的创作公司</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
+                度加AI，让你不再是工具的使用者，而是“个人创作公司”的CEO。
+                5位顶级AI专家已就位，24小时待命。
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#tutorials" class="px-8 py-4 tech-gradient text-white rounded-full font-bold blue-shadow hover:scale-105 transition-all">立即领取落地方案</a>
+                <div class="px-8 py-4 border border-blue-100 rounded-full font-bold text-blue-600 bg-blue-50/50">0元开启 CEO 体验</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 核心优势 -->
+    <section class="py-16 bg-blue-50/30">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-blue-100 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="text-blue-600 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">开通系统外挂</h3>
+                <p class="text-slate-500 text-sm">一个人就是一个公司。不需东拼西凑，在这里完成从文字到视频的生产全闭环。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-blue-100 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="text-blue-600 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">给你极致掌控感</h3>
+                <p class="text-slate-500 text-sm">像开公司一样做内容。把琐事交给 AI 员工，你只需关注核心决策。</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-blue-100 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="text-blue-600 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">直接为落地服务</h3>
+                <p class="text-slate-500 text-sm">不再是“看个热闹”。我们的课程从第一分钟起，就是教你如何带来实用价值。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI 员工团架构 -->
+    <section id="experts" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Organization</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-2">你的 AI 专家员工团</h2>
+                <p class="text-slate-500 mt-4">在这里，你只需学会“如何下命令”</p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-6">
+                <!-- 文案专家 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-white border border-blue-50 rounded-2xl p-6 text-center hover:border-blue-500 transition-all hover:shadow-xl hover:-translate-y-2">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=copywriter&backgroundColor=b6e3f4" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow-inner" alt="文案专家">
+                        <h4 class="font-bold text-lg mb-1">文案专家</h4>
+                        <p class="text-xs text-blue-600 bg-blue-50 inline-block px-2 py-1 rounded mb-3">懂逻辑，有深度</p>
+                        <p class="text-slate-400 text-xs">续写想法、商业脚本、海报文案</p>
+                    </div>
+                </div>
+                <!-- 设计专家 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-white border border-blue-50 rounded-2xl p-6 text-center hover:border-blue-500 transition-all hover:shadow-xl hover:-translate-y-2">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=designer&backgroundColor=d1d4f9" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow-inner" alt="设计专家">
+                        <h4 class="font-bold text-lg mb-1">设计专家</h4>
+                        <p class="text-xs text-blue-600 bg-blue-50 inline-block px-2 py-1 rounded mb-3">高审美，出图快</p>
+                        <p class="text-slate-400 text-xs">朋友圈海报、表情包、电商配图</p>
+                    </div>
+                </div>
+                <!-- 剪辑专家 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-white border border-blue-50 rounded-2xl p-6 text-center hover:border-blue-500 transition-all hover:shadow-xl hover:-translate-y-2">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=editor&backgroundColor=ffdfbf" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow-inner" alt="剪辑专家">
+                        <h4 class="font-bold text-lg mb-1">剪辑专家</h4>
+                        <p class="text-xs text-blue-600 bg-blue-50 inline-block px-2 py-1 rounded mb-3">电影感，黑科技</p>
+                        <p class="text-slate-400 text-xs">文生视频、图生视频、商业短片</p>
+                    </div>
+                </div>
+                <!-- 视觉专家 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-white border border-blue-50 rounded-2xl p-6 text-center hover:border-blue-500 transition-all hover:shadow-xl hover:-translate-y-2">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=viz&backgroundColor=c0aede" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow-inner" alt="视觉专家">
+                        <h4 class="font-bold text-lg mb-1">视觉专家</h4>
+                        <p class="text-xs text-blue-600 bg-blue-50 inline-block px-2 py-1 rounded mb-3">一键变美，变专业</p>
+                        <p class="text-slate-400 text-xs">自动 PPT、逻辑信息图、会议纪要</p>
+                    </div>
+                </div>
+                <!-- 编程专家 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-white border border-blue-50 rounded-2xl p-6 text-center hover:border-blue-500 transition-all hover:shadow-xl hover:-translate-y-2">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=code&backgroundColor=ffd5dc" class="w-20 h-20 mx-auto mb-4 rounded-xl shadow-inner" alt="编程专家">
+                        <h4 class="font-bold text-lg mb-1">编程专家</h4>
+                        <p class="text-xs text-blue-600 bg-blue-50 inline-block px-2 py-1 rounded mb-3">零代码，造资产</p>
+                        <p class="text-slate-400 text-xs">个人主页、小应用、游戏工具</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细实战教程 -->
+    <section id="tutorials" class="py-24 bg-slate-900 text-white rounded-[3rem] mx-6 mb-12">
+        <div class="max-w-7xl mx-auto px-10">
+            <div class="mb-20">
+                <h2 class="text-4xl font-bold mb-4">通俗易懂的“CEO 7天”教程</h2>
+                <p class="text-slate-400">我们将带你仅需对话，就可支配 5 个专家。</p>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Case 1 -->
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+                    <div class="flex-1">
+                        <div class="inline-block px-4 py-1 bg-blue-600 rounded-full text-xs font-bold mb-6">入门级：文案与策略对齐</div>
+                        <h3 class="text-3xl font-bold mb-6">让“文案专家”成为你的智囊团</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            小白最怕没头绪。告诉它你的模糊想法，它会先通过“需求对齐”确认你的真实目标，再输出爆款。
+                        </p>
+                        <div class="bg-slate-800 p-6 rounded-2xl border-l-4 border-blue-500 mb-6">
+                            <p class="text-blue-300 text-sm font-bold mb-2">你应该这样说：</p>
+                            <p class="italic text-slate-300">“我有个副业想法想做马年周边，但不知道怎么切入，请你和我对齐需求后再行动。”</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 relative">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=800&auto=format&fit=crop" class="rounded-3xl blue-shadow floating" alt="文案实战场景">
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+                    <div class="flex-1">
+                        <div class="inline-block px-4 py-1 bg-blue-600 rounded-full text-xs font-bold mb-6">实战级：一键设计品牌视觉</div>
+                        <h3 class="text-3xl font-bold mb-6">支配“设计专家”10 秒出大片</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            不需要 PS。上传一张你的产品图，或者直接描述主题。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
+                                <p class="text-xs text-slate-400">输出海报</p>
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=300&auto=format&fit=crop" class="mt-2 rounded-lg" alt="AI海报样例">
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
+                                <p class="text-xs text-slate-400">输出表情包</p>
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=300&auto=format&fit=crop" class="mt-2 rounded-lg" alt="AI表情包样例">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                            <p class="text-blue-300 text-sm font-bold mb-4">输入指令：</p>
+                            <code class="text-green-400 text-sm block leading-relaxed">
+                                # Role: Apple 首席设计师<br>
+                                # Mission: 帮我设计一张马年新年朋友圈海报<br>
+                                # Style: 9:16，蓝色科技感，高级简约
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+                    <div class="flex-1">
+                        <div class="inline-block px-4 py-1 bg-blue-600 rounded-full text-xs font-bold mb-6">进阶级：孵化你的数字资产</div>
+                        <h3 class="text-3xl font-bold mb-6">让“编程专家”为你造一个主页</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            这是“一人公司”最值钱的部分。通过对话，直接在度加内生成一个可以访问、可以展示、甚至可以收款的数字页面。
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-sm"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> 零代码基础，对话即编程</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> 内置 2026 最强 Canvas 交互</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> 资产归你所有，永久留痕</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" class="rounded-3xl blue-shadow" alt="数字化资产展示">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们 / 运营计划 -->
+    <section id="join" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500 opacity-20 -mr-20 -mt-20 rounded-full"></div>
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">别再看热闹了，<br>今天就开始打造你的创作帝国</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 text-left">
+                        <p class="text-blue-100 text-sm font-bold mb-2">入门首选</p>
+                        <h4 class="text-white text-2xl font-bold mb-4">0元 CEO 训练营</h4>
+                        <p class="text-white/70 text-sm mb-6">2小时快速学会支配5个专家，获得首套数字资产包。</p>
+                        <button class="w-full py-3 bg-white text-blue-600 rounded-full font-bold">立即加入</button>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl text-left shadow-2xl relative">
+                        <div class="absolute -top-4 right-8 bg-orange-500 text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">Most Popular</div>
+                        <p class="text-blue-600 text-sm font-bold mb-2">系统进阶</p>
+                        <h4 class="text-slate-900 text-2xl font-bold mb-4">999元 一人公司实战营（限时免费）</h4>
+                        <p class="text-slate-500 text-sm mb-6">21天陪伴式教学 + 作业带做保证你会 + 志同道合学习伙伴。保证从“知道”到“做到”。</p>
+                        <button class="w-full py-3 bg-blue-600 text-white rounded-full font-bold">点击抢座</button>
+                    </div>
+                </div>
+                <p class="text-blue-100 text-sm">用度加、拥有AI公司，直接领先 80% 的人。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-blue-50">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
+            <p>© 2026 度加 AI | 打造你的最强AI公司.</p>
+            <div class="flex gap-6 mt-6 md:mt-0">
+                <span>本网页由 @度加AI 团队编制</span>
+                <span>联系作者 ：dujia666</span>
+                <span>用户协议</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
